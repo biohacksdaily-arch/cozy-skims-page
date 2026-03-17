@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import skimsLogo from "@/assets/skims-logo.png";
-import { Clock, ArrowRight, CheckCircle, Star, Bell } from "lucide-react";
+import { ArrowRight, CheckCircle, Star, Bell } from "lucide-react";
 
 const names = ["Samantha", "Jessica", "Michael", "Emily", "David", "Sarah", "Ashley"];
 
