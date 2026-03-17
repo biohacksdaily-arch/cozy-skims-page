@@ -116,8 +116,11 @@ const Index = () => {
         </motion.div>
 
         {/* CTA Button */}
-        <motion.button
-          className="w-full py-5 rounded-xl bg-primary text-primary-foreground text-lg font-bold flex items-center justify-center gap-3 shadow-lg"
+        <motion.a
+          href="https://linkthem.net/aff_c?offer_id=113&aff_id=12808"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full py-5 rounded-xl bg-primary text-primary-foreground text-lg font-bold flex items-center justify-center gap-3 shadow-lg no-underline"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           initial={{ opacity: 0, y: 10 }}
