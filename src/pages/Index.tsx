@@ -14,7 +14,6 @@ const steps = [
 
 const Index = () => {
   const [bannerName, setBannerName] = useState(names[0]);
-  const [spots, setSpots] = useState(7);
 
   useEffect(() => {
     const interval = setInterval(() => {
