@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import skimsLogo from "@/assets/skims-logo.png";
+import { motion } from "framer-motion";
+import lululemonLogo from "@/assets/lululemon-logo.png";
 import { ArrowRight, CheckCircle, Star, Bell } from "lucide-react";
 
 const names = ["Samantha", "Jessica", "Michael", "Emily", "David", "Sarah", "Ashley"];
@@ -22,7 +22,6 @@ const Index = () => {
     return () => clearInterval(interval);
   }, []);
 
-
   return (
     <div className="min-h-screen bg-background flex flex-col items-center">
       {/* Notification Banner */}
@@ -39,9 +38,9 @@ const Index = () => {
       <div className="w-full max-w-md mx-auto px-5 py-8 flex flex-col items-center gap-8">
         {/* Logo */}
         <motion.img
-          src={skimsLogo}
-          alt="SKIMS"
-          className="h-16 object-contain"
+          src={lululemonLogo}
+          alt="lululemon"
+          className="h-14 object-contain"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
@@ -55,7 +54,7 @@ const Index = () => {
           transition={{ delay: 0.3 }}
         >
           <h1 className="text-3xl font-black tracking-tight text-foreground">
-            SKIMS Gift Card
+            lululemon Gift Card
           </h1>
           <div className="mt-2 inline-flex items-center gap-1.5 border border-trust/30 bg-trust/10 text-trust rounded-full px-3 py-1 text-sm font-medium">
             <CheckCircle className="w-4 h-4" />
