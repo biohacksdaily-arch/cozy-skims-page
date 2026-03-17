@@ -37,15 +37,14 @@ const Index = () => {
 
       <div className="w-full max-w-md mx-auto px-5 py-8 flex flex-col items-center gap-8">
         {/* Logo */}
-        <motion.div
-          className="flex flex-col items-center gap-3"
+        <motion.img
+          src={lululemonLogo}
+          alt="lululemon"
+          className="h-24 object-contain"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
-        >
-          <img src={lululemonLogo} alt="lululemon" className="h-24 object-contain" />
-          <span className="text-4xl font-black tracking-tight text-foreground uppercase">Lululemon</span>
-        </motion.div>
+        />
 
         {/* Title */}
         <motion.div
@@ -55,7 +54,7 @@ const Index = () => {
           transition={{ delay: 0.3 }}
         >
           <h1 className="text-3xl font-black tracking-tight text-foreground">
-            lululemon Gift Card
+            Lululemon Gift Card
           </h1>
           <div className="mt-2 inline-flex items-center gap-1.5 border border-trust/30 bg-trust/10 text-trust rounded-full px-3 py-1 text-sm font-medium">
             <CheckCircle className="w-4 h-4" />
