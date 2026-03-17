@@ -128,7 +128,7 @@ const Index = () => {
           transition={{ delay: 1, type: "spring", stiffness: 300, damping: 30 }}
         >
           Get Your $750 <ArrowRight className="w-5 h-5" />
-        </motion.button>
+        </motion.a>
 
         <p className="text-xs text-muted-foreground text-center">
           No purchase necessary. Limited time offer. T&Cs apply.
