@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import skimsLogo from "@/assets/skims-logo.png";
-import { Clock, ArrowRight, CheckCircle, Star, Bell } from "lucide-react";
+import { ArrowRight, CheckCircle, Star, Bell } from "lucide-react";
 
 const names = ["Samantha", "Jessica", "Michael", "Emily", "David", "Sarah", "Ashley"];
 
@@ -14,7 +14,6 @@ const steps = [
 
 const Index = () => {
   const [bannerName, setBannerName] = useState(names[0]);
-  const [spots, setSpots] = useState(7);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,12 +22,6 @@ const Index = () => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSpots((s) => (s > 3 ? s - 1 : 7));
-    }, 8000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="min-h-screen bg-background flex flex-col items-center">
@@ -120,19 +113,6 @@ const Index = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div>
-
-        {/* Urgency */}
-        <motion.div
-          className="w-full rounded-lg border-2 border-dashed border-urgency-text/30 bg-urgency py-3 px-4 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.9 }}
-        >
-          <p className="text-urgency-text text-sm font-semibold flex items-center justify-center gap-2">
-            <Clock className="w-4 h-4" />
-            Only <span className="font-black">{spots} spots</span> remaining today — Act fast!
-          </p>
         </motion.div>
 
         {/* CTA Button */}
