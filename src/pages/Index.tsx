@@ -40,7 +40,7 @@ const Index = () => {
         <motion.img
           src={lululemonLogo}
           alt="lululemon"
-          className="h-24 object-contain"
+          className="h-32 object-contain"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
