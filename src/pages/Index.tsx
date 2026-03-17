@@ -116,19 +116,6 @@ const Index = () => {
           </div>
         </motion.div>
 
-        {/* Urgency */}
-        <motion.div
-          className="w-full rounded-lg border-2 border-dashed border-urgency-text/30 bg-urgency py-3 px-4 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.9 }}
-        >
-          <p className="text-urgency-text text-sm font-semibold flex items-center justify-center gap-2">
-            <Clock className="w-4 h-4" />
-            Only <span className="font-black">{spots} spots</span> remaining today — Act fast!
-          </p>
-        </motion.div>
-
         {/* CTA Button */}
         <motion.button
           className="w-full py-5 rounded-xl bg-primary text-primary-foreground text-lg font-bold flex items-center justify-center gap-3 shadow-lg"
