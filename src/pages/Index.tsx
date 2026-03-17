@@ -23,12 +23,6 @@ const Index = () => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSpots((s) => (s > 3 ? s - 1 : 7));
-    }, 8000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="min-h-screen bg-background flex flex-col items-center">
